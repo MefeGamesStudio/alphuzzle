@@ -456,18 +456,25 @@
         justify-content: center;
       }
     }
+    
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px; /* istersen kaldır */
+        object-fit: cover;   /* logon deforme olmasın diye */
+    }
   </style>
 </head>
 <body>
   <div class="page">
     <header>
-      <div class="logo">
-        <div class="logo-mark">A</div>
-        <div>
-          <div class="logo-text-main">Alphuzzle</div>
-          <div class="logo-text-sub">Word Block Puzzle</div>
+        <div class="logo">
+            <img src="logo.png" class="logo-img" alt="Alphuzzle Logo">
+            <div>
+                <div class="logo-text-main">Alphuzzle</div>
+                <div class="logo-text-sub">Word Block Puzzle</div>
+            </div>
         </div>
-      </div>
       <nav>
         <a href="#gameplay">Gameplay</a>
         <a href="#features">Features</a>
